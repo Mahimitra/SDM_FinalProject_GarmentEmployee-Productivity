@@ -2,9 +2,9 @@
 
 Collaborators : 
 
-Jitesh 
-Mahimitra Chirala
-Sai kiran Paturi
+Jitesh,
+Mahimitra Chirala,
+Sai kiran Paturi.
 
 
 One of the most important cases of industrial globalization in this day and age is the Garment Industry. It is a field that uses a lot of manual processes and requires a lot of labor. The performance of the workers in the garment manufacturing enterprises in terms of production and delivery is largely responsible for meeting the enormous global demand for clothing products. Decision-makers in the apparel business therefore find it highly desirable to monitor, evaluate, and forecast the productivity performance of the working teams in their factories.
