@@ -2,7 +2,7 @@
 
 Collaborators : 
 
-Jitesh,
+Hanumanth Ram Sai Jeetesh Chamana,
 Mahimitra Chirala,
 Sai kiran Paturi.
 
