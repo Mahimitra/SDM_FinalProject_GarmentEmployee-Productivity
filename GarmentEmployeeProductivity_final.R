@@ -96,6 +96,7 @@ lr_rmse<-mean((y_test - lr_pred)^2)^(1/2)
 #mae
 lr_mae<-mae(y_test, lr_pred)
 plot(lr)
+
 lr_mae
 
 #PCR:
@@ -197,7 +198,7 @@ rf_rmse<-mean((y_test - rf_pred)^2)^(1/2)
 #mae
 rf_mae<-mae(y_test, rf_pred)
 
-result <- data.frame (Algorithms  = c('Regression',
+result <- data.frame (Algorithms  = c('Linear Regression',
                                       'Principal Component Regression',
                                       'Ridge Regression',
                                       'Lasso Regression',
@@ -212,3 +213,13 @@ result <- data.frame (Algorithms  = c('Regression',
 )
 #result
 kable(result)
+result_reshaped <- data.frame(Algorithms = result$Algorithms,                           
+                          Errors = c(result$MAE, result$MSE, result$RMSE),
+                          group = c(rep("MAE", nrow(result)),
+                                    rep("MSE", nrow(result)),
+                                    rep("RMSE", nrow(result))))
+
+ggplot(result_reshaped, aes(Algorithms, Errors, col = group))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle = 90))
+
